@@ -1,0 +1,11 @@
+def repeat(word):
+    calc={}
+    for letter in word:
+        if letter in calc:
+            calc[letter]+=1
+        else:
+            calc[letter]=1
+    return calc
+word=input('Enter a word: ')
+print(repeat(word))
+
